@@ -1,12 +1,23 @@
 #include <stdio.h>
 
-int main (){
-    int product=1;
-    for (int i = 1; i <= 4; i++)
-    {
-        product*=i;
-        
+int factorial(int n){
+    if(n==0){
+        return 1;
     }
-    printf("the value of factorail  is %d", product);
+    else {
+        return n * factorial(n-1);
+    }
+}
+
+int main (){
+    int n;
+    printf("enter the number : ");
+    scanf("%d",&n);
+
+    int result = factorial(n);
+
+    printf("factorial is %d",result);
+
+    
     return 0;
 }
