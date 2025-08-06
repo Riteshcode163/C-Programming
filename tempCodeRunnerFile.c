@@ -1,1 +1,2 @@
- printf("the sum is %d\n", n);
+
+    return 0;
